@@ -1,0 +1,494 @@
+
+/*FONTE IMPORTADA DO GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cousine:wght@700&family=Libre+Barcode+39+Extended+Text&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap');
+
+/*EXTENSÃO PARA MOTIFICAÇÕES NO JAVASCRIPT*/
+#area-1, #area-2, #area-3, #area-4, #area-5, #area-6, #area-7, #area-8, #o-jogo{
+    visibility: hidden;
+}
+
+/*MOTIFICAÇÃO GERAL DA PÁGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILIZAÇÃO DO FUNDA DA PÁGINA*/
+body{
+    background-color: #f7b267;
+    box-shadow: 0 0 200px inset #000000;
+}
+
+/*ESTILIZAÇÃO DA PRIMEIRA ÁREA DA PÁGINA*/
+#area-1{
+    display: flex;
+    align-items: center;
+    height: 1005px;
+    flex-direction: column;
+}
+
+/*TITULO*/
+.caixa-the-dark-ways{
+    margin-top: 6%;
+    position: absolute;
+    padding: 0 5%;
+    border-left: 100px groove #e51a4c;
+    border-right: 100px ridge #e51a4c;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fffcf2;
+    text-shadow: 0 12px #e51a4c;
+}
+
+/*IMAGENS CARROSSEL*/
+.slider{
+    margin-top: 18%;
+    position: absolute;
+    width: 1130px;
+    height: 590px;
+    overflow: hidden;
+    border: 10px solid #fff;
+    box-shadow: 8px 8px 50px #0000008c;
+}
+
+.slides{
+    width: 400%;
+    height: 400%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide img{
+    width: 1130px;
+}
+
+/*NAVEGAÇÃO DOS BOTÕES*/
+.manual-navigation{
+    position: absolute;
+    margin: 525px 320px;
+    display: flex;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 50px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+/*POSIÇÃO VERTICAL DAS IMAGENS*/
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+.img5{
+    width: 70em;
+    height: 37em;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -150%;
+}
+
+.img7{
+    width: 70em;
+    height: 37em;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -175%;
+}
+
+/*LINK DO TWITTER*/
+.twitter{
+    margin-left: 70%;
+    margin-top: 33%;
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+
+}
+
+#twitter{
+    font-family: 'Silkscreen', cursive;
+    font-size: 35px;
+    text-decoration: underline 5px;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+#twitter:hover{
+    color: #fff;
+}
+
+/*LINK DO INSTAGRAM*/
+.instagram{
+    margin-right: 70%;
+    margin-top: 33%;
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+
+}
+
+#instagram{
+    font-family: 'Silkscreen', cursive;
+    font-size: 35px;
+    text-decoration: underline 5px;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+#instagram:hover{
+    color: #fff;
+}
+
+/*ESTILIZAÇÃO DA SEGUNDA ÁREA DA PÁGINA*/
+#area-2{
+    display: flex;
+    padding: 0 5%;
+    gap: 0 6%;
+    height: 1005px;
+}
+
+.caixa-sobre-o-universo{
+    margin: 5% 0 0 8%;
+    position: absolute;
+    padding: 0 5%;
+    border-left: 100px groove #e51a4c;
+    border-right: 100px ridge #e51a4c;
+}
+
+h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fffcf2;
+    text-shadow: 0 12px #e51a4c;
+}
+
+.caixa-imagem9{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#img9{
+    width: 800px;
+    border: 10px solid #fff;
+    box-shadow: 8px 8px 50px #0000008c;
+}
+
+.caixa-paragrafo-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3%;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+#paragrafo-1{
+    font-family: 'Bebas Neue', cursive;
+    font-variant: small-caps;
+    font-size: 34px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #212529;
+}
+
+/*ESTILIZAÇÃO DA TERCEIRA ÁREA DA PÁGINA*/
+#area-3{
+    display: flex;
+    align-items: center;
+    height: 1005px;
+    flex-direction: column;
+    gap: 15%;
+}
+
+.caixa-personagens{
+    margin-top: 5%;
+    padding: 0 5%;
+    border-left: 100px groove #e51a4c;
+    border-right: 100px ridge #e51a4c;
+}
+
+h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fffcf2;
+    text-shadow: 0 12px #e51a4c;
+}
+
+/*LINKS DOS PERSONAGENS*/
+#link-rachel{
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #212529;
+    text-shadow: 0px 5px 5px #fff;
+}
+
+#link-rachel:hover{
+    color: #fff;
+}
+
+#linl-rafael{
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #212529;
+    text-shadow: 0px 5px 5px #fff;
+}
+
+#linl-rafael:hover{
+    color: #fff;
+}
+
+#link-raquel{
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #212529;
+    text-shadow: 0px 5px 5px #fff;
+}
+
+#link-raquel:hover{
+    color: #fff;
+}
+
+/*ESTILIZAÇÃO DA QUARTA ÁREA DA PÁGINA*/
+#area-4{
+    display: flex;
+    padding: 0 5%;
+    gap: 10%;
+    height: 1005px;
+}
+
+.caixa-paragrafo-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3%;
+}
+
+#paragrafo-2{
+    font-family: 'Bebas Neue', cursive;
+    font-variant: small-caps;
+    font-size: 35px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #212529;
+}
+
+.caixa-imagem10{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#img10{
+    height: 800px;
+    border: 10px solid #fff;
+    box-shadow: inset 0px 0px 50px 15px #0000008c;
+}
+
+/*ESTILIZAÇÃO DA QUINTA ÁREA DA PÁGINA*/
+#area-5{
+    display: flex;
+    padding: 0 5%;
+    gap: 10%;
+    height: 1005px;
+}
+
+.caixa-imagem11{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#img11{
+    height: 800px;
+    width: 543.91px;
+    border: 10px solid #fff;
+    box-shadow: inset 0px 0px 50px 15px #0000008c;
+}
+
+.caixa-paragrafo-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3%;
+}
+
+#paragrafo-3{
+    font-family: 'Bebas Neue', cursive;
+    font-variant: small-caps;
+    font-size: 35px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #212529;
+}
+
+/*ESTILIZAÇÃO DA SEXTA ÁREA DA PÁGINA*/
+#area-6{
+    display: flex;
+    padding: 0 5%;
+    gap: 10%;
+    height: 1005px;
+}
+
+.caixa-paragrafo-4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3%;
+}
+
+#paragrafo-4{
+    font-family: 'Bebas Neue', cursive;
+    font-variant: small-caps;
+    font-size: 35px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #212529;
+}
+
+.caixa-imagem12{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#img12{
+    height: 800px;
+    width: 543.91px;
+    border: 10px solid #fff;
+    box-shadow: inset 0px 0px 50px 15px #0000008c;
+}
+
+/*ESTILIZAÇÃO DA SETIMA ÁREA DA PÁGINA*/
+#area-7{
+    display: flex;
+    align-items: center;
+    height: 1005px;
+    flex-direction: column;
+}
+
+.caixa-como-jogar{
+    margin-top: 5%;
+    position: absolute;
+    padding: 0 5%;
+    border-left: 100px groove #e51a4c;
+    border-right: 100px ridge #e51a4c;
+}
+
+h6{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fffcf2;
+    text-shadow: 0 12px #e51a4c;
+}
+
+#o-jogo{
+    position: absolute;
+    margin-top: 48%;
+    font-family: 'Silkscreen', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    color: #212529;
+}
+
+#o-jogo:hover{
+    color: #fff;
+}
+
+/*ESTILIZAÇÃO DO BOTÃO*/
+#link-topo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #212529;
+    box-shadow: 0px 8px 5px 0px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+#link-topo:hover{
+    color: #000000;
+}
+
+/*RODAPÉ*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #212529;
+    border-top: 10px solid #e51a4c;
+}
+
+#elemento-6{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#social{
+    color: #fff;
+    text-decoration: none;
+}
+
+#social:hover{
+    color: #f7b267;
+}
